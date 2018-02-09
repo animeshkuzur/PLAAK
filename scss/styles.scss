@@ -186,6 +186,7 @@ nav{
 					}
 				}
 			}
+
 		}
 		.body{
 			margin-top:15px;
@@ -198,6 +199,11 @@ nav{
 				font-weight:400;
 				b{
 					font-size:14px;
+				}
+			}
+			.line-graph{
+				#container{
+					background-color:$primary-color;
 				}
 			}
 		}

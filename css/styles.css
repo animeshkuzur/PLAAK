@@ -141,6 +141,8 @@ nav #navbarDropdown {
       font-weight: 400; }
       #wrapper .graph .body .live-status b {
         font-size: 14px; }
+    #wrapper .graph .body .line-graph #container {
+      background-color: #36383D; }
   #wrapper .trading {
     padding-top: 20px;
     color: white; }

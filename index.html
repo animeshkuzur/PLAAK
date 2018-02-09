@@ -11,6 +11,13 @@
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/styles.css">
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
     </head>
 
     <body>
@@ -397,10 +404,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="line-graph">
+                                <div class="line-graph mt-3">
                                     <div class="row">
                                         <div class="col">
-                                            
+                                            <div id="container" style="width:100%; height:400px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -534,9 +541,7 @@
             </div>
         </div>
 
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/popper.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
+        
 
         <script>
             function subMenu() {
@@ -552,6 +557,95 @@
                 }
                 //document.getElementById("mySidenav").style.height = "250px";
             }
+
+            $.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+
+    // Create the chart
+    Highcharts.stockChart('container', {
+        colors:['#FF3100'],
+        chart: {
+            backgroundColor: '#36383D',
+            style: {
+                fontFamily: 'Montserrat',
+                color: '#fff'
+            }
+        },
+        
+        xAxis: {
+      labels: {
+         style: {
+            color: '#6c757d'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6c757d'
+         }
+      }
+   },
+        rangeSelector: {
+            selected: 1,
+          buttonTheme: {
+             fill: '#36383D',
+             stroke: '#6c757d',
+             'stroke-width': 1,
+             style: {
+            color: '#CCC'
+         },
+        states: {
+            hover: {
+               fill: '#707073',
+               style: {
+                  color: 'white'
+               }
+            },
+            select: {
+               fill: '#707073',
+               stroke: '#707073',
+               style: {
+                  color: 'white'
+               }
+            }
+         }
+          }
+       },
+       scrollbar: {
+      barBackgroundColor: '#808083',
+      barBorderColor: '#808083',
+      buttonArrowColor: '#CCC',
+      buttonBackgroundColor: '#606063',
+      buttonBorderColor: '#606063',
+      rifleColor: '#FFF',
+      trackBackgroundColor: '#404043',
+      trackBorderColor: '#404043'
+   },
+        series: [{
+            name: 'ETH/BTC',
+            data: data,
+            type: 'area',
+            threshold: null,
+            tooltip: {
+                valueDecimals: 2
+            },
+            fillColor: {
+                linearGradient: {
+                    x1: 0,
+                    y1: 0,
+                    x2: 0,
+                    y2: 1
+                },
+                stops: [
+                    [0, '#FF3100'],
+                    [1, Highcharts.Color(Highcharts.getOptions().colors[3]).setOpacity(0).get('rgba')]
+                ]
+            }
+        }]
+    });
+});
+
+
         </script>
     </body>
 </html>
