@@ -1,0 +1,167 @@
+body {
+  font: 100% Montserrat, sans-serif;
+  background-color: #36383D; }
+
+nav .navbar-brand .title {
+  font-weight: 800;
+  font-size: 24px; }
+  nav .navbar-brand .title .subs {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left; }
+
+nav .navbar-brand i {
+  font-size: 24px;
+  margin-left: 5px; }
+
+nav .timestamp {
+  font-weight: 500;
+  font-size: 14px; }
+
+nav .value {
+  text-align: right;
+  font-weight: 400;
+  font-size: 14px; }
+  nav .value .value-text {
+    color: #fff; }
+
+nav #navbarDropdown {
+  color: #fff;
+  font-size: 20px; }
+  nav #navbarDropdown .fa-user-circle-o {
+    font-size: 20px;
+    color: #fff; }
+
+.subMenu {
+  background-color: #1B1C1E;
+  color: #fff;
+  overflow-y: hidden;
+  z-index: 1;
+  height: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .subMenu a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 12px; }
+  .subMenu a:hover {
+    color: white; }
+  .subMenu .active {
+    color: white;
+    border-top: 2px solid white; }
+    .subMenu .active a {
+      color: white; }
+  .subMenu .col-auto {
+    margin: 0px;
+    padding: 20px 15px 15px 15px;
+    text-align: center; }
+    .subMenu .col-auto i {
+      font-size: 26px;
+      margin-bottom: 5px; }
+
+#wrapper {
+  margin-top: 20px; }
+  #wrapper .pos {
+    color: #7ED321; }
+  #wrapper .neg {
+    color: #FF3100; }
+  #wrapper .trade-hist .title {
+    color: #6c757d;
+    font-size: 20px;
+    font-weight: 800; }
+  #wrapper .trade-hist i {
+    color: #6c757d;
+    font-size: 20px;
+    font-weight: 800; }
+  #wrapper .trade-hist .body {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500; }
+    #wrapper .trade-hist .body .sub-head {
+      color: #6c757d; }
+    #wrapper .trade-hist .body .content {
+      color: white;
+      margin-top: 10px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+  #wrapper .graph .head {
+    margin-top: 20px; }
+    #wrapper .graph .head .title {
+      text-align: left;
+      font-size: 30px;
+      font-weight: 800;
+      color: white; }
+    #wrapper .graph .head .sub-title {
+      text-align: left;
+      font-size: 15px;
+      font-weight: 800;
+      color: white; }
+    #wrapper .graph .head .stock {
+      padding-top: 10px; }
+    #wrapper .graph .head .currency {
+      text-align: right;
+      font-size: 12px;
+      font-weight: 400;
+      color: white; }
+    #wrapper .graph .head .amount {
+      text-align: right;
+      font-size: 28px;
+      font-weight: 800;
+      color: white; }
+    #wrapper .graph .head .value {
+      text-align: right;
+      font-size: 15px;
+      font-weight: 400; }
+    #wrapper .graph .head .menu {
+      margin-top: 10px; }
+      #wrapper .graph .head .menu .col-auto {
+        padding: 0px 15px; }
+        #wrapper .graph .head .menu .col-auto a {
+          font-weight: 700;
+          color: #6c757d;
+          text-decoration: none; }
+        #wrapper .graph .head .menu .col-auto a:hover {
+          color: white; }
+        #wrapper .graph .head .menu .col-auto .active {
+          color: white; }
+  #wrapper .graph .body {
+    margin-top: 15px; }
+    #wrapper .graph .body .live-status {
+      margin-top: 20px;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 400; }
+      #wrapper .graph .body .live-status b {
+        font-size: 14px; }
+  #wrapper .trading {
+    padding-top: 20px;
+    color: white; }
+    #wrapper .trading .head .balance {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center; }
+    #wrapper .trading .head .amount {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center; }
+      #wrapper .trading .head .amount sup {
+        font-weight: 400;
+        font-size: 12px; }
+    #wrapper .trading .head .info {
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      color: #FF3100; }
+    #wrapper .trading .head .button {
+      margin-top: 20px; }
+    #wrapper .trading .body .tabs {
+      margin-top: 20px; }
+    #wrapper .trading .body .nav-link {
+      font-size: 15px;
+      font-weight: 700; }
