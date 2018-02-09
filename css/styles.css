@@ -166,6 +166,12 @@ nav #navbarDropdown {
       margin-top: 20px; }
     #wrapper .trading .body .tabs {
       margin-top: 20px; }
+    #wrapper .trading .body .nav-tabs {
+      border-color: #6c757d; }
+      #wrapper .trading .body .nav-tabs .active {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: white; }
     #wrapper .trading .body .nav-link {
       font-size: 15px;
       font-weight: 700; }

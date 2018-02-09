@@ -205,6 +205,9 @@ nav{
 					background-color:$primary-color;
 				}
 			}
+			.depth-graph{
+				
+			}
 		}
 	}
 	.trading{
@@ -241,6 +244,14 @@ nav{
 		.body{
 			.tabs{
 				margin-top:20px;
+			}
+			.nav-tabs{
+				border-color: #6c757d;
+				.active{
+					background-color: #6c757d;
+					border-color: #6c757d;
+					color:white;
+				}
 			}
 			.nav-link{
 				font-size:15px;
