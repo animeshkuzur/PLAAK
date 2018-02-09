@@ -1,5 +1,5 @@
 $font-stack:    Montserrat, sans-serif;
-$primary-color: #36383D;
+$primary-color: #222327;
 $border-color: #6c757d;
 $pos-color: #7ED321;
 $neg-color: #FF3100;
@@ -8,7 +8,6 @@ body {
   font: 100% $font-stack;
   background-color: $primary-color;
 }
-
 nav{
 	.navbar-brand{
 		.title{
@@ -56,7 +55,7 @@ nav{
 }
 
 .subMenu{
-	background-color: #1B1C1E;
+	background-color: #161616;
 	color:#fff;
 	overflow-y: hidden;
 	z-index: 1;

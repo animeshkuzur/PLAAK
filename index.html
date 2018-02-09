@@ -21,7 +21,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-secondary" style="background-color: #222327">
             <a class="navbar-brand" onclick="subMenu()" href="javascript:void(0)">
 
                 <div class="title"> <img src="./assets/plaak.png" class="d-inline-block" width="35" height="35"> PLAAK <sub><i class="fa fa-caret-down" id="indicator"></i></sub><br><div class="subs">Exchange</div></div>  
@@ -564,7 +564,7 @@
     Highcharts.stockChart('container', {
         colors:['#FF3100'],
         chart: {
-            backgroundColor: '#36383D',
+            backgroundColor: '#222327',
             style: {
                 fontFamily: 'Montserrat',
                 color: '#fff'
@@ -638,7 +638,7 @@
                 },
                 stops: [
                     [0, '#FF3100'],
-                    [1, Highcharts.Color(Highcharts.getOptions().colors[3]).setOpacity(0).get('rgba')]
+                    [1, Highcharts.Color('#FF3100').setOpacity(0).get('rgba')]
                 ]
             }
         }]

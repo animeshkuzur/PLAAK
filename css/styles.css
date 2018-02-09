@@ -1,6 +1,6 @@
 body {
   font: 100% Montserrat, sans-serif;
-  background-color: #36383D; }
+  background-color: #222327; }
 
 nav .navbar-brand .title {
   font-weight: 800;
@@ -35,7 +35,7 @@ nav #navbarDropdown {
     color: #fff; }
 
 .subMenu {
-  background-color: #1B1C1E;
+  background-color: #161616;
   color: #fff;
   overflow-y: hidden;
   z-index: 1;
@@ -142,7 +142,7 @@ nav #navbarDropdown {
       #wrapper .graph .body .live-status b {
         font-size: 14px; }
     #wrapper .graph .body .line-graph #container {
-      background-color: #36383D; }
+      background-color: #222327; }
   #wrapper .trading {
     padding-top: 20px;
     color: white; }
