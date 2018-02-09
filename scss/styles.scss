@@ -18,7 +18,9 @@ nav{
 			.subs{
 				font-size:10px;
 				font-weight: 600;
-				text-align:left;
+				text-align:right;
+				margin-right:30px;
+				margin-top:-10px;
 			}
 		}
 		i{
@@ -238,6 +240,67 @@ nav{
 			.nav-link{
 				font-size:15px;
 				font-weight:700;
+			}
+			.input-field{
+				margin-top:20px;
+
+				.btn-flex {
+					display: flex;
+					align-items: stretch;
+					align-content: stretch;
+				}
+
+				.btn-flex .btn:first-child {
+				    flex-grow: 1;
+				    text-align: left;
+				}
+				.btn-style{
+					background-color:transparent;
+					font-weight:800;
+
+					.sub-title{
+						font-weight:500;
+						color: #6c757d;
+						font-size:10px;
+					}
+				}
+				.info{
+					color:$neg-color;
+					font-weight:500;
+					font-size:10px;
+					text-align:right;
+					text-decoration:none;
+				}
+
+			}
+			input {
+				background-color:transparent;
+				border-color:#6c757d;
+			}
+			.form-control{
+				color:white;
+				font-weight:700;
+			}
+			.input-group-text{
+				background-color:transparent;
+				border-color:#6c757d;
+				color:white;
+				font-weight:700;
+			}
+			.fee{
+				font-weight:400;
+				font-size:12px;
+			}
+			.buy{
+				.btn{
+					font-size:15px;
+					color:white;
+					font-weight:700;
+				}
+				button i{
+
+					font-size:18px;
+				}
 			}
 		}
 	}

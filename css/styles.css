@@ -8,7 +8,9 @@ nav .navbar-brand .title {
   nav .navbar-brand .title .subs {
     font-size: 10px;
     font-weight: 600;
-    text-align: left; }
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -10px; }
 
 nav .navbar-brand i {
   font-size: 24px;
@@ -165,3 +167,45 @@ nav #navbarDropdown {
     #wrapper .trading .body .nav-link {
       font-size: 15px;
       font-weight: 700; }
+    #wrapper .trading .body .input-field {
+      margin-top: 20px; }
+      #wrapper .trading .body .input-field .btn-flex {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch; }
+      #wrapper .trading .body .input-field .btn-flex .btn:first-child {
+        flex-grow: 1;
+        text-align: left; }
+      #wrapper .trading .body .input-field .btn-style {
+        background-color: transparent;
+        font-weight: 800; }
+        #wrapper .trading .body .input-field .btn-style .sub-title {
+          font-weight: 500;
+          color: #6c757d;
+          font-size: 10px; }
+      #wrapper .trading .body .input-field .info {
+        color: #FF3100;
+        font-weight: 500;
+        font-size: 10px;
+        text-align: right;
+        text-decoration: none; }
+    #wrapper .trading .body input {
+      background-color: transparent;
+      border-color: #6c757d; }
+    #wrapper .trading .body .form-control {
+      color: white;
+      font-weight: 700; }
+    #wrapper .trading .body .input-group-text {
+      background-color: transparent;
+      border-color: #6c757d;
+      color: white;
+      font-weight: 700; }
+    #wrapper .trading .body .fee {
+      font-weight: 400;
+      font-size: 12px; }
+    #wrapper .trading .body .buy .btn {
+      font-size: 15px;
+      color: white;
+      font-weight: 700; }
+    #wrapper .trading .body .buy button i {
+      font-size: 18px; }
