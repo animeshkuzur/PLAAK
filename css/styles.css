@@ -2,44 +2,43 @@ body {
   font: 100% Montserrat, sans-serif;
   background-color: #222327; }
 
-nav .navbar-brand .title {
-  font-weight: 800;
-  font-size: 24px; }
-  nav .navbar-brand .title .subs {
-    font-size: 10px;
-    font-weight: 600;
+nav {
+  background-image: linear-gradient(to bottom, #474747 0%, #111111 94%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111',endColorstr='#474747'); }
+  nav .navbar-brand .title {
+    font-weight: 800;
+    font-size: 24px; }
+    nav .navbar-brand .title .subs {
+      font-size: 10px;
+      font-weight: 600;
+      text-align: right;
+      margin-right: 30px;
+      margin-top: -10px; }
+  nav .navbar-brand i {
+    font-size: 24px;
+    margin-left: 5px; }
+  nav .timestamp {
+    font-weight: 500;
+    font-size: 14px; }
+  nav .value {
     text-align: right;
-    margin-right: 30px;
-    margin-top: -10px; }
-
-nav .navbar-brand i {
-  font-size: 24px;
-  margin-left: 5px; }
-
-nav .timestamp {
-  font-weight: 500;
-  font-size: 14px; }
-
-nav .value {
-  text-align: right;
-  font-weight: 400;
-  font-size: 14px; }
-  nav .value .value-text {
-    color: #fff; }
-
-nav #navbarDropdown {
-  color: #fff;
-  font-size: 20px; }
-  nav #navbarDropdown .fa-user-circle-o {
-    font-size: 20px;
-    color: #fff; }
+    font-weight: 400;
+    font-size: 14px; }
+    nav .value .value-text {
+      color: #fff; }
+  nav #navbarDropdown {
+    color: #fff;
+    font-size: 20px; }
+    nav #navbarDropdown .fa-user-circle-o {
+      font-size: 20px;
+      color: #fff; }
 
 .subMenu {
   background-color: #161616;
   color: #fff;
   overflow-y: hidden;
   z-index: 1;
-  height: 0;
+  height: 100px;
   width: 100%;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
