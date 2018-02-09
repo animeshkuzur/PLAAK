@@ -339,6 +339,14 @@
                                         <div class="col-4 neg">1001.82000000</div>
                                         <div class="col-4">21:04:40.356</div>
                                     </div>
+                                    <div class="row" >
+                                        <div class="col-6 mt-3 mb-3" style="text-align: right;">
+                                            <a href="#" style="color:#6c757d;text-decoration: none;" class="">Previous</a>
+                                        </div>
+                                        <div class="col-6 mt-3 mb-3  border-secondary border-left" style="text-align: left;">
+                                           <a href="#" style="color:#6c757d;text-decoration: none;" class="">Next</a> 
+                                        </div>
+                                    </div>
                                 </div>
 
                                     
@@ -413,10 +421,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="depth-graph mt-3 border-secondary border-top">
+                                <div class="depth-graph mt-4 mb-3 ">
                                     <div class="row">
                                         <div class="col">
-                                            
+                                            <div id="depth-container" style="width:100%; height:200px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -630,6 +638,9 @@
       trackBackgroundColor: '#404043',
       trackBorderColor: '#404043'
    },
+   credits: {
+      enabled: false
+  },
    exporting: { enabled: false },
         series: [{
             name: 'ETH/BTC',
@@ -654,7 +665,93 @@
         }]
     });
 });
+Highcharts.stockChart('depth-container', {
+                exporting: { enabled: false },
+                chart: {
+            backgroundColor: '#222327',
+            style: {
+                fontFamily: 'Montserrat',
+                color: '#fff'
+            }
+        },
+        rangeSelector: {
+        enabled: false
+             },
+         navigator: {
+            enabled: false
+        },
+        scrollbar: {
+            enabled: false
+        },
+        credits: {
+      enabled: false
+  },
+  xAxis: {
+        labels:
+{
+  enabled: false
+}
+    },
+        series: [{
+            name: 'ETH/USD',
+            color: '#7ED321',
+            data: [
 
+[1516320000000,178.46],
+[1516579200000,150.00],
+[1516665600000,120.04],
+[1516752000000,100.22],
+[1516838400000,50.11],
+[1516924800000,1.51],
+[1516924800000,0.51],
+],
+            step: true,
+            type: 'area',
+            tooltip: {
+                valueDecimals: 2,
+            },
+            fillColor: {
+                linearGradient: {
+                    x1: 0,
+                    y1: 0,
+                    x2: 0,
+                    y2: 1
+                },
+                stops: [
+                    [0, '#7ED321'],
+                    [1, Highcharts.Color('#7ED321').setOpacity(0).get('rgba')]
+                ]
+            }
+            },
+            {
+            name: 'ETH/USD',
+            color:'#FF3100',
+            data: [[1517184000000,0.96],
+[1517184000000,1.96],
+[1517270400000,30.97],
+[1517356800000,50.43],
+[1517443200000,100.78],
+[1517529600000,112.50],
+[1517788800000,156.49],],
+            step: true,
+            type: 'area',
+            tooltip: {
+                valueDecimals: 2
+            },
+            fillColor: {
+                linearGradient: {
+                    x1: 0,
+                    y1: 0,
+                    x2: 0,
+                    y2: 1
+                },
+                stops: [
+                    [0, '#FF3100'],
+                    [1, Highcharts.Color('#FF3100').setOpacity(0).get('rgba')]
+                ]
+            }
+        }]
+    });
 
         </script>
     </body>
