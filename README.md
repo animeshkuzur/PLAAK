@@ -1,2 +1,2 @@
 # PLAAK
-[Preview] (https://animeshkuzur.github.io/PLAAK/)
+[Preview](https://animeshkuzur.github.io/PLAAK/)
